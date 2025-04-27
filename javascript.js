@@ -37,7 +37,7 @@ const playGame = () => {
         const comp = compChoice.toLowerCase();
     
         if ( user === comp) {
-            console.log(`Tie! Points for both!`);
+            console.log(`Tie! No points awarded.`);
         } else if ( isWinner(userChoice, compChoice) ) {
             console.log(`You win! ${user} beats ${comp}`);
             humanScore++;
@@ -53,6 +53,8 @@ const playGame = () => {
     
         playRound(userChoice, compChoice); 
     }
+
+    console.log(`Final Score: \nUser - ${humanScore} \nComputer -  ${compScore}`)
 };
 
 const main = () => {
