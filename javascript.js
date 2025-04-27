@@ -1,8 +1,3 @@
-
-const helloWorld = () => {
-    console.log('Hello World');
-};
-
 const getRandomInt = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -65,9 +60,5 @@ const main = () => {
 };
 
 module.exports = {
-    helloWorld,
-    getComputerChoice,
-    getHumanChoice,
-    playRound,
-    main,
+    main
 }
